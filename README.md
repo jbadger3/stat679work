@@ -4,3 +4,4 @@
 `git clone git@github.com:jbadger3/stat679work.git`
 3. Each homework assignment will be given it's own subdirectory labeled 'hw' with the assingment number e.g. 'hw1' for the first assignment.  
 4. All home works contain copies of the raw data from the course repository located at git@github.com:UWMadison-computingtools/coursedata.git
+5. Each homework directory contains a detailed readme.md containing the date, sh scripts, and unix commands used to complete the assignment.

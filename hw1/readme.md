@@ -9,6 +9,6 @@ This directory will contain all the original data for HW1.  Below is the sequenc
    `timetesty_snaq.xxx` to `timetest0y_snaq.xxx` where "y" is a digit between 1 and 9.
 
 `sh normalizeFileNames.sh`
-- *9/25/2016* A shell script was created summarizeSNaQres.sh to summarize the results of the snaq runs.  The file summary.csv contains three fields analysis, hmax, and CPUtime for each run.
+- *9/25/2016* A shell script was created summarizeSNaQres.sh to summarize the results of the snaq runs.  The file summary.csv contains three fields: analysis, hmax, and CPUtime for each run.
 
 `sh summarizeSNaQres.sh`
