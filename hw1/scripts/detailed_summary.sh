@@ -25,8 +25,9 @@ do
   n_runs=$(grep -rEo "seconds in (\d+) successful runs" "hw1-snaqTimeTests/out/$trimmed_name" | sed -E 's/^.* in ([0-9]+) .*/\1/')
 
   #get max # of failed proposals
-  n_fail=$(grep "max number of failed proposals" hw1-snaqTimeTests/log/timetest01_snaq.log | sed -E 's/.* proposals = ([0-9]+).*/\1/')
-
+  #n_fail=$(grep "max number of failed proposals" hw1-snaqTimeTests/log/timetest01_snaq.log | sed -E 's/.* proposals = ([0-9]+).*/\1/')
+  #after confering with classmate this sed implementation works better than grep
+  n_fail=$(sed -nE 's/.*seconds in ([0-9]+) successful runs/\1/p' hw1-snaqTimeTests/out/$trimmed_name)
 
   #get "ftolAbs" in the log file (tolerateddifference in the absolute value of the score function, to stop the search)
   f_abs=$(grep "ftolAbs" $filename | cut -d, -f2 | cut -d= -f2)
